@@ -5,12 +5,14 @@ public class Equipo {
 	private String nombre;
 	private String descripcion;
 	
+	
+	//Constructor
 	public Equipo(String nombre) {
 		this.nombre = nombre;
 	} 
 	
 	
-	
+	// Get y Set
 	public String getNombre() {
 		return nombre;
 	}

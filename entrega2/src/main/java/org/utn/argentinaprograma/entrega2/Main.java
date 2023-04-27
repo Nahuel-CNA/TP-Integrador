@@ -99,10 +99,11 @@ public class Main {
             	}
             	
             	Map<String, Integer> puntajePersonas = new HashMap<>();
+            	//Almacenar los puntajes de cada participante segun su nombre
             	
             	if(campos[0]==campos[0]) {
             		 
-            	}
+            	}// Borrar no afecta en nada
             	
             	
             	
@@ -138,7 +139,8 @@ public class Main {
             int puntajeUsuario = entry.getValue();
             System.out.println(nombreUsuario + ": " + puntajeUsuario + " punto/s" + ", tuvo "+ puntajeUsuario+ " acierto/s en los pronosticos");
             
-            // un pequeño bucle para imprimir el puntaje del usuario
+            /* un pequeño bucle para imprimir el puntaje del usuario, es un iterador es decir un for each
+            En cada iteración, se obtiene el nombre del usuario y su puntaje asociado y se imprimen en la consola.*/
         }
         
 		System.out.println("Se obtuvo un total de: "+ puntos + " punto/s en todos los pronosticos");

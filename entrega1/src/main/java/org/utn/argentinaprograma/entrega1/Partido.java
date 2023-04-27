@@ -2,7 +2,7 @@ package org.utn.argentinaprograma.entrega1;
 
 public class Partido {
 	
-	private Equipo equipo1;
+	private Equipo equipo1; //Objeto de la clase equipo
 	private Equipo equipo2;
 	private int golesEquipo1;
 	private int golesEquipo2;
@@ -53,6 +53,7 @@ public class Partido {
 		this.golesEquipo2 = golesEquipo2;
 	}
 	
+	//Metodo para que definer ganador,perdedor,empate segun los goles
 	public String resultado(Equipo equipo) {
 		
 		if(golesEquipo1 == golesEquipo2) {

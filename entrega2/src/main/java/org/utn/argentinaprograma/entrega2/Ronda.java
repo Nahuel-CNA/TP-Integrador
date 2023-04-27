@@ -7,12 +7,17 @@ public class Ronda {
 	
 	private int nro;
 	private List<Partido> partidos = new ArrayList<>();
+	//
 	
 	
 	public Ronda(String nro) {
 		super();
 		this.nro = Integer.parseInt(nro);
 	}
+	
+	
+	
+	//Getters y setters
 	public int getNro() {
 		return nro;
 	}
@@ -31,6 +36,7 @@ public class Ronda {
 	@Override
 	public String toString() {
 		return "Ronda nro = " + nro ;
+		//Arregla el error que volvia ilegible a la ronda
 	}
 	
 	

@@ -15,6 +15,7 @@ public class MAIN {
     public static void main(String[] args) {   
     	
     	Collection<Partido> partidos = new ArrayList<Partido>();
+    	//Coleccion de objetos Partido, utilizando un lista de array
     	
     	Path pathResultados = Paths.get(args[0]); // src/test/resources/resultado1.csv
     	// args[0], es el argumento el cual le indicamos donde se encuentra el archivo por fuera del codigo, 
@@ -57,9 +58,11 @@ public class MAIN {
                 Equipo equipo2 = new Equipo(campos[4]);
                 Partido partido = null;
                 
-                for(Partido partidoCol : partidos) {
+                //bucle for
+                for(Partido partidoCol : partidos) { //Recorre la colecion de partidos
                 	if(partidoCol.getEquipo1().getNombre().equals(equipo1.getNombre()) && 
-                			partidoCol.getEquipo2().getNombre().equals(equipo2.getNombre())){
+                			partidoCol.getEquipo2().getNombre().equals(equipo2.getNombre())){ /*compara los nombres de
+                		los equipos */
                 		
                 		partido = partidoCol;
                 	}
@@ -67,6 +70,7 @@ public class MAIN {
                 }
                 Equipo equipo = null;
                 String resultado = null;
+                
             	if("X".equals(campos[1])) {
             		equipo = equipo1;
             		resultado = "Ganador"; 

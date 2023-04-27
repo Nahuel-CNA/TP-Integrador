@@ -7,7 +7,7 @@ public class Pronostico {
 	private String resultado;
 	
 	
-	
+	//Constructor
 	public Pronostico(Partido partido, Equipo equipo, String resultado) {
 		super();
 		this.partido = partido;
@@ -16,7 +16,7 @@ public class Pronostico {
 	}
 
 
-
+//Getters y setters
 	public Partido getPartido() {
 		return partido;
 	}

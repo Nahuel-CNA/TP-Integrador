@@ -7,6 +7,7 @@ public class Partido {
 	private int golesEquipo1;
 	private int golesEquipo2;
 	
+	//Constructores
 	public Partido(Equipo equipo1, Equipo equipo2) {
 		this.equipo1 = equipo1;
 		this.equipo2 = equipo2;
@@ -21,7 +22,7 @@ public class Partido {
 		this.golesEquipo2 = golesEquipo2;
 	}
 
-
+//Getters y setters
 	public Equipo getEquipo1() {
 		return equipo1;
 	}
@@ -53,6 +54,8 @@ public class Partido {
 		this.golesEquipo2 = golesEquipo2;
 	}
 	
+	
+	//Asigna los resultados segun los goles
 	public String resultado(Equipo equipo) {
 		
 		if(golesEquipo1 == golesEquipo2) {
